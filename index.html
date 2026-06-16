@@ -38,6 +38,141 @@
     echo "Division:"."($num1/$num2)."<br>
 {else
 
+         <title>Calculadora</title>
+</head>
+<body>
+
+    <h2>Calculadora Básica</h2>
+
+    <form method="post">
+        Número 1:
+        <input type="number" name="num1"><br><br>
+
+        Número 2:
+        <input type="number" name="num2"><br><br>
+
+        <input type="submit" value="Calcular">
+    </form>
+
+<?php
+if ($_POST) {
+    // Recibir los datos del formulario
+    $num1 = $_POST['num1'];
+    $num2 = $_POST['num2'];
+
+    // Realizar la operación (Suma en este caso)
+    $resultado = $num1 + $num2;
+
+    // Mostrar el resultado
+    echo "<h3>El resultado es: " . $resultado . "</h3>";
+}
+?>
+
+</body>
+</html>
+
+<?php
+// Asumiendo que $num1 y $num2 vienen de un formulario o se definen antes
+echo "<h3>Resultados</h3>";
+echo "Suma: " . ($num1 + $num2) . "<br>";
+echo "Resta: " . ($num1 - $num2) . "<br>";
+echo "Multiplicación: " . ($num1 * $num2) . "<br>";
+
+if ($num2 != 0) {
+    echo "División: " . ($num1 / $num2) . "<br>";
+} else {
+    echo "No se puede dividir entre cero<br>";
+}
+?>
+
+<br>
+<a href="index.php">Volver al menú</a>
+
+</body>
+</html>
+
+
+echo "<h3>Resultados</h3>";
+    echo "Suma: ".($num1 + $num2)."<br>";
+    echo "Resta: ".($num1 - $num2)."<br>";
+    echo "Multiplicación: ".($num1 * $num2)."<br>";
+
+    if ($num2 != 0) {
+        echo "División: ".($num1 / $num2)."<br>";
+    } else {
+        echo "No se puede dividir entre cero<br>";
+    }
+
+
+        <title>Promedio de notas</title>
+
+    
+</head>
+<body>
+    <h2>Promedio de Notas</h2>
+    <form method="post"></form>
+    <Nota:1>
+        <input type="number" name=nota 1"> <br><br>
+        Nota2:
+        <input type= number" name="nota2"><br><br>
+        Nota3:
+        <input type="nota3" name="nota3"><br><br>
+
+        <html>
+            <body>
+            <form method="post">
+                
+            <input type="submit" value="calcular promedio">
+            </form>
+             <?php
+if ($_POST) {
+    $nota1 = $_POST["nota 1"];
+    $nota 2= $_POST["nota 2"];
+    $nota 3 = $_POST["nota 3"];
+
+                <title>conversor temperatura</title>
+    
+</head>
+<body>
+    <h2>conversor de celsius a farenheit</h2>
+
+    <form method="post"></form>
+    Grados celsius:
+    <input type="number" name "celsius"><br><br>
+
+    <input type="submit" value="convertir"><br><br>
+    </form>
+
+      <?php
+if ($_POST) {
+    $celsius = $_POST["celsius"];
+    $fahrenheit = $_POST["fahrenheit"];
+
+    <br><br>
+
+    echo" <h3>Resultado <h3>";
+    echo$celsius ," c equivalente a "fahrentheit
+     <br><br>
+     <a href="index.php"> volver al menu</a>
+     <body>
+        <html>
+        <?php
+    echo "<h3>Resultado</h3>";
+    echo "Promedio: " . $promedio . "<br>";
+
+    if ($promedio >= 70) {
+        echo "Estado: Aprobado";
+    } else {
+        echo "Estado: Reprobado";
+    }
+    ?>
+
+    <br><br>
+    <a href="index.php">Volver al menú</a>
+</body>
+</html>
+     
+
 
       
     
